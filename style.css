@@ -1,0 +1,304 @@
+/*
+ Theme:        Fork Burke
+ Theme URI:    http://example.com/twenty-fifteen-child/
+ Description:  Twenty Fifteen Child Theme
+ Author:       Sofasurfer
+ Author URI:   http://sofasurfer.org
+ Template:     wp-bootstrap-starter
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  forkburke
+*/
+
+
+@import url('https://fonts.googleapis.com/css?family=Bellefair|IM+Fell+French+Canon|Rufina|Scheherazade');
+
+
+/*
+font-family: 'IM Fell French Canon', serif;
+font-family: 'Bellefair', serif;
+font-family: 'Scheherazade', serif;
+font-family: 'Rufina', serif;
+*/
+
+
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+body{
+    font-size: 1.5rem;
+    min-height: 100%;
+    margin-bottom: 80px!important;
+    font-family: 'Scheherazade', serif!important;
+}
+
+h1,h2,h3,h4{
+    font-family: 'Bellefair', serif!important;
+}
+
+h1.entry-title{
+    font-size: 2rem;
+    border-bottom: 0px solid #eaecef;
+}
+
+a{
+    padding: 2px 5px;   
+    color:    #DC143C!important;  
+}
+a:hover{
+    text-decoration: underline;
+    background-color: transparent;
+    /*background-color: #DC143C!important  */
+}
+
+hr{
+/*    display: block;
+    height: 1px;
+    border: 0;
+    margin: 1em 0;
+    padding: 0; 
+    border-top: solid 1px darkslateblue;*/
+}
+
+.navbar-brand{
+    margin-bottom: -10px;    
+}
+.navbar-brand > a{
+    padding: 0px;
+/*    font-family: 'Bellefair', serif!important;    
+*/    font-size: 1.8rem!important;
+}
+
+body.home #masthead.fixed{
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 9;
+    background-color: #fff!important;
+    border-bottom: 0px solid #eaecef;
+    box-shadow: none;   
+} 
+header#masthead{
+    box-shadow: none;
+    border-bottom: 1px solid #eaecef;
+}
+
+#masthead{
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 9;
+    background-color: #fff!important;
+    border-bottom: 0px solid #eaecef;
+    box-shadow: none;
+
+    /*
+    navajowhite
+    palegoldenrod
+    */
+}
+
+.nav > li > a:focus, .nav > li > a:hover{
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.home #masthead{
+    box-shadow: none;
+    background-color: transparent!important;
+    border-bottom: 0px;
+}
+
+#masthead .navbar-nav > li a,
+#masthead .navbar-nav > li > a.nav-link{
+    color: black!important;
+    font-size: 1.2rem;
+/*    font-family: 'Bellefair', serif!important;    
+*/}
+#masthead .navbar-nav > li.active > a.nav-link,
+#masthead .navbar-nav > li > a.nav-link:focus, 
+#masthead .navbar-nav > li > a.nav-link:hover{
+    color: #DC143C!important;
+    border: none!important;
+    font-weight: 500!important;
+    text-decoration: none!important;
+}
+#masthead .navbar-nav > li.dropdown.show > a.nav-link{
+    color: white!important;
+    background-color: #DC143C!important  
+
+}
+
+.dropdown-menu .dropdown-item{
+
+    font-size: 0.8rem!important;
+}
+.dropdown-menu{
+    border-radius: 0;
+    border-color: transparent;
+    margin-top: -5px;
+    width: 100%;
+    font-size: 0.8rem;
+    border-left: 1px solid #DC143C;
+}
+
+#page-sub-header .container h1{
+    padding-top:100px!important;
+    line-height: 70px!important;
+}
+
+
+.site-title{
+    font-size: 5rem;
+    line-height: 0.8;
+}
+.site-title a:hover{
+    border-bottom: none!important;    
+}
+.entry-title a{
+    margin-left: -5px;
+    padding: 2px 5px;
+}
+
+.entry-meta{
+    display: none;
+}
+
+.widget{
+    font-size: 1.4rem;
+}
+
+.sociallinks .fa{
+    color: #DC143C;
+    font-size: 24px;
+}
+
+#comments{
+    display: none!important;
+}
+
+.post.hentry{
+    margin-bottom: 8rem;
+}
+
+
+h2.entry-title{
+    border-bottom: none;
+}
+
+/*.entry-title a:hover{
+    border-bottom: none!important;
+    color: white!important;
+    background-color: #DC143C!important  
+}*/
+
+.post-navigation .nav-previous a, 
+.post-navigation .nav-next a{
+    border-color: #DC143C;
+}
+
+.post-navigation .nav-previous a:hover, 
+.post-navigation .nav-next a:hover{
+    color:white!important;
+    background-color: #DC143C;
+}
+
+body.home #content.site-content{
+    padding-top: 4rem;
+    /*text-align: center;*/
+}
+body.home #content.site-content .entry-content{
+    font-size: 1.3rem;
+}
+
+
+#page-sub-header{
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+#page-sub-header h1{
+    color: white!important;
+}
+#page-sub-header p{
+    display: none;
+}
+
+#content.site-content{
+    padding-top: 8rem;
+    min-height: 100%;
+}
+
+#sidebar{
+    height: 100%;
+    /*background-image: url('images/face-b.png');*/
+}
+.post-thumbnail img{
+    width:100%!important;
+}
+.sociallinks a{
+    margin-right: 2rem;
+    border-bottom: none;
+}
+.sociallinks a:hover{
+    border-bottom: none!important;
+}
+
+.field-wrap textarea{
+    border: solid 1px #eaecef;
+}
+.nf-field-element input[type=button]{
+    color: #DC143C;
+    font-size: 1.2rem;
+    padding: 0px 20px;
+    border: solid 1px #DC143C;
+    background: transparent;
+
+}
+.nf-field-element input[type=button]:hover{
+    color: white;
+    background:   #DC143C;
+}
+
+.carousel a:hover{
+    background-color: transparent!important;
+}
+
+footer#colophon{
+    text-align: left!important;
+    background: black;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0; 
+    height: 70px;
+    padding-top: 20px;
+    font-size: 1.5rem!important;
+}
+
+footer#colophon a{
+    color:#99979c!important;
+}
+footer#colophon a:hover{
+    color: #DC143C!important;
+    background-color: transparent!important;
+}
+
+
+@media screen and (min-width: 1024px) {
+
+  
+  #sidebar{
+    position:absolute!important;
+  }
+/*  .sociallinks a{
+    margin-right: 0px!important;
+  }
+  .sociallinks a .fa{
+    font-size: 18px!important;
+    margin-right: 0px!important;
+  }*/
+}
