@@ -69,8 +69,8 @@ hr{
 }
 .navbar-brand > a{
     padding: 0px;
-/*    font-family: 'Bellefair', serif!important;    
-*/    font-size: 1.8rem!important;
+    font-family: 'Bellefair', serif!important;    
+    font-size: 1.8rem!important;
 }
 
 body.home #masthead.fixed{
@@ -117,8 +117,8 @@ header#masthead{
 #masthead .navbar-nav > li > a.nav-link{
     color: black!important;
     font-size: 1.2rem;
-/*    font-family: 'Bellefair', serif!important;    
-*/}
+    font-family: 'Bellefair', serif!important;    
+}
 #masthead .navbar-nav > li.active > a.nav-link,
 #masthead .navbar-nav > li > a.nav-link:focus, 
 #masthead .navbar-nav > li > a.nav-link:hover{
